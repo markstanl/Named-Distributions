@@ -24,3 +24,16 @@ The PMF of the geometric distribution is given by:
 P(X=k) = (1-p)^(k-1) * p    
 Where k is the number of trials needed to achieve the first success, and p is the probability of success.
 Denoted by X ~ G(p)
+## Normal Distribution
+The noraml distribution is a continuous distribution that is symmetric about the mean. It is defined by two parameters: the mean and the standard deviation.
+The PDF of the normal distribution is given by:
+f(x) = (1/(sqrt(2*pi)*sigma)) * exp(-((x-mu)^2)/(2*sigma^2))
+Where mu is the mean and sigma is the standard deviation.
+Denoted by X ~ N(mu, sigma^2)
+
+## Normal Approximation to the Binomial Distribution
+The normal approximation to the binomial distribution is a continuous distribution that approximates the binomial distribution when n is large. It is defined by two parameters: the n and p
+It uses the same PDF as the normal distribution, but with a different mean and standard deviation:
+mu = n*p
+sigma = sqrt(n*p*(1-p))
+Denoted by X ~ N(mu, sigma^2)
